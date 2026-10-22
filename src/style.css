@@ -1,0 +1,170 @@
+:root {
+    --primary-color: #2c3e50;
+    --text-color: #333333;
+    --bg-color: #f8f9fa;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Clean, universally recognized ATS font style */
+    line-height: 1.6;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    color: var(--primary-color);
+    font-size: 28px;
+}
+
+.contact-info {
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Specific accent for the primary document/resume link */
+.contact-info a.resume-link {
+    font-weight: bold;
+    border-bottom: 1px dashed var(--primary-color);
+}
+
+/* ATS-Friendly Native HTML Accordion styling */
+details {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    transition: background 0.2s ease;
+}
+
+    details[open] {
+        background: #ffffff;
+        padding-bottom: 15px;
+    }
+
+summary {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 5px 0;
+    list-style: none; /* Removes default disclosure arrow marker */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    summary::-webkit-details-marker {
+        display: none; /* Removes default arrow marker in Safari browsers */
+    }
+
+    summary::after {
+        content: '➔';
+        font-size: 14px;
+        transition: transform 0.2s ease;
+    }
+
+details[open] summary::after {
+    transform: rotate(90deg);
+}
+
+.section-content {
+    margin-top: 15px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 15px;
+}
+
+/* Grid layout preserving natural text reading order */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.skills-category strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.job, .education-item {
+    margin-bottom: 20px;
+}
+
+.job-header, .edu-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-title, .degree {
+    font-style: italic;
+    color: #555;
+}
+
+ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Additional styles for Open Source & Personal Projects */
+.project-item {
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+    .project-header a {
+        color: var(--primary-color);
+        text-decoration: underline;
+        font-size: 14px;
+    }
+
+.job-description, .project-description {
+    margin: 4px 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.project-tech {
+    font-style: italic;
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+}
+
+/* Additional styles for contact email fade-in effect */
+#contact-email a {
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+#contact-email a.visible {
+    opacity: 1;
+}
