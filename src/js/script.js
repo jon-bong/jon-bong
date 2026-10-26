@@ -29,13 +29,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //// This prevents scrapers from finding a raw file link in your source code
     // === 2. SECURE PDF DOWNLOAD (NO RAW LINK IN HTML) ===
-    const downloadBtn = document.getElementById("download-btn");
+    const downloadCVBtn = document.getElementById("download-cv-btn");
     
-    if (downloadBtn) {
-        downloadBtn.addEventListener("click", function() {
+    if (downloadCVBtn) {
+        downloadCVBtn.addEventListener("click", function() {
             // Points securely to the assets sibling folder
             const folder = "././assets/docs/";
             const fileName = "Jonathan_Bong_CV.pdf";
+            
+            // Opens the PDF safely in a new tab upon a real human click
+            window.open(folder + fileName, '_blank');
+        });
+    }
+
+    const downloadResumeBtn = document.getElementById("download-resume-btn");
+    
+    if (downloadResumeBtn) {
+        downloadResumeBtn.addEventListener("click", function() {
+            // Points securely to the assets sibling folder
+            const folder = "././assets/docs/";
+            const fileName = "Jonathan_Bong_Resume.pdf";
             
             // Opens the PDF safely in a new tab upon a real human click
             window.open(folder + fileName, '_blank');
