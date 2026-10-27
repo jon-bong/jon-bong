@@ -168,3 +168,99 @@ li {
 #contact-email a.visible {
     opacity: 1;
 }
+
+/* --- Site Footer Styling --- */
+.site-footer {
+    /*background-color: #0d1117;*/
+    /*border-top: 1px solid #30363d;*/
+    border-top: 2px solid var(--primary-color);
+    padding: 24px 10px;
+    margin-top: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #8b949e;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+.footer-copyright {
+    margin: 0;
+}
+
+.footer-architecture {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.arch-label {
+    font-weight: 500;
+    margin-right: 4px;
+}
+
+/* Base Badge Layout */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    /*background-color: #21262d;*/
+    background-color: #f8f9fa;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Icon sizing within badges */
+.badge-icon {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+/* Interactivity states for hyperlinked badges */
+a.badge:hover {
+    background-color: #30363d;
+}
+
+/* Custom themed borders and text accents */
+a.badge.azure {
+    border-color: #0078d4;
+    color: #58a6ff;
+}
+a.badge.azure:hover {
+    background-color: rgba(0, 120, 212, 0.15);
+}
+
+a.badge.github {
+    border-color: #6e7681;
+}
+a.badge.github:hover {
+    background-color: #2b3137;
+}
+
+.badge.tech {
+    cursor: default;
+}
