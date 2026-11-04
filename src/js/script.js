@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         downloadResumeBtn.addEventListener("click", function() {
             // Points securely to the assets sibling folder
             const folder = "././assets/docs/";
-            const fileName = "Jonathan_Bong_Resume.pdf";
+            const fileName = "Jonathan_Bong_Resume_Online.pdf";
             
             // Opens the PDF safely in a new tab upon a real human click
             window.open(folder + fileName, '_blank');

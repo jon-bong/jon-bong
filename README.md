@@ -23,7 +23,7 @@ I am a software developer & application consultant in Singapore specialising in 
 | **Languages** | VB, C#, ASP.NET/MVC
 | **Frameworks** | Microsoft .NET
 | **Databases** | Microsoft SQL Server, MySQL, SQLite
-| **Web Services** | REST API, XML
+| **Web Services** | REST API, JSON, XML, XSD
 | **Cloud** | Microsoft Dynamics 365 Finance and Operations, Microsoft Azure (Vision in Foundry Tools, Data Explorer, SQL, Storage), Amazon Web Services (EC2, S3, RDS, DMS)
 | **Web** | Selenium (browser-automation), Web Scrapping
 
@@ -33,6 +33,8 @@ I am a software developer & application consultant in Singapore specialising in 
 * **Microsoft .NET Development Toolkit**: A collection of .NET utility programs and class libraries to assist with development:
 * **Visual Studio Code Snippet Editor:** A utility to create and edit Visual Studio code snippets.
 -->
+* [**Cloud Web Resume and Portfolio**](https://polite-stone-082aff400.4.azurestaticapps.net): A responsive web resume (using clean, responsive HTML5 and CSS3) deployed globally using Azure Static Web Apps (SWA). The web site adopts defence-in-depth strategies to protect itself against scrapers, crawlers and automated bots.
+
 * [**EBT File Definitions Class Library**](https://github.com/jon-bong/mssl-ebt-models): A class library comprising of the various file definitions used in the *Electronic Business Transaction (EBT)* system of the *Market Support Services Licensee (MSSL)* for the *Open Electricity Market (OEM)* of Singapore.
 
 * [**EMC NEMS Data Services Class Library**](https://github.com/jon-bong/emc-sewplus-nems-models): A class library of interface file definitions as specified in the *Data Services Specification* for the *National Electricity Market of Singapore (NEMS) System* by the *Energy Market Company (EMC)*.
