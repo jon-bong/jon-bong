@@ -264,3 +264,14 @@ a.badge.github:hover {
 .badge.tech {
     cursor: default;
 }
+
+.responsive-png {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.spaced-btn {
+    margin-top: 10px; /* Increases vertical space above the button */
+  }
